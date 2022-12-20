@@ -87,7 +87,22 @@ li {
   cursor: pointer;
 }
 /* End of Header Style */
-
+/* Solution Style*/
+.solution-info {
+  background: #ffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 3rem;
+}
+.solution-container p, .solution-container h1{
+  color: black;
+  font-weight: bold;
+}
+.solution-info p{
+  width: 400px;
+}
+/* End of Solution Style */
 /*Resposive Design*/
 @media (max-width: 700px) {
   .header {
@@ -99,9 +114,26 @@ li {
   .intro-container h1 {
     font-size: 20px;
   }
+  .solution-info {
+    flex-direction: column;
+  }
+  .info{
+    margin-top: 10px;
+  }
+  .solution-info p{
+    width: 300px;
+  }
 }
 @media (max-width: 400px) {
+  .header {
+    margin: 10px 0.5rem;
+  }
   .header h1 {
     font-size: 16px;
+  }
+  .header ul li{
+    padding-left: 1rem;
+    transform: translateY(1px);
+
   }
 }
