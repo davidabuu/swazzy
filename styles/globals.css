@@ -56,8 +56,8 @@ li {
   font-weight: bold;
 }
 .btn {
-  color: #fff;
-  background-color: orange;
+  color: #fff !important;
+  background-color: orange !important;
   width: 200px;
 }
 /* End of Landing Page Style */
