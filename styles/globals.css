@@ -5,6 +5,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Montserrat", sans-serif;
+}h1{
+  margin: 0;
 }
 * {
   box-sizing: border-box;
@@ -103,6 +105,30 @@ li {
   width: 400px;
 }
 /* End of Solution Style */
+/* Footer Style */
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #eaeaea;
+  padding:3rem;
+}
+.footer-flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer a{
+  color: #333;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.icon{
+  color: #333;
+}
+/* End of Footer Style */
+
 /*Resposive Design*/
 @media (max-width: 700px) {
   .header {
@@ -127,6 +153,9 @@ li {
 @media (max-width: 400px) {
   .header {
     margin: 10px 0.5rem;
+  }
+  .footer{
+    padding:2rem;
   }
   .header h1 {
     font-size: 16px;
