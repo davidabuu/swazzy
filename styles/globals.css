@@ -89,6 +89,7 @@ li {
   cursor: pointer;
 }
 /* End of Header Style */
+
 /* Solution Style*/
 .solution-info {
   background: #ffff;
@@ -105,6 +106,7 @@ li {
   width: 400px;
 }
 /* End of Solution Style */
+
 /* Footer Style */
 .footer{
   display: flex;

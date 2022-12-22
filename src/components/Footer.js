@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="footer">
       <div className="footer-flex">
         <ContactPhoneOutlined className="icon" />
-        <a href="tel:09054416766">CONTACT ME</a>
+        <a href="tel:09054416766" id="contact">CONTACT ME</a>
       </div>
       <div className="footer-flex">
         <EmailOutlined className="icon" />
