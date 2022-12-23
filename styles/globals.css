@@ -5,8 +5,13 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Montserrat", sans-serif;
-}h1{
+}
+html {
+  scroll-behavior: smooth;
+}
+h1 {
   margin: 0;
+  
 }
 * {
   box-sizing: border-box;
@@ -17,6 +22,9 @@ li {
   list-style: none;
 }
 
+a{
+  color: #fff;
+}
 /* Landing Page Style */
 .container-landing {
   background: linear-gradient(0deg, transparent, rgba(9, 10, 10, 0.605)),
@@ -98,41 +106,42 @@ li {
   justify-content: space-around;
   padding-top: 3rem;
 }
-.solution-container p, .solution-container h1{
+.solution-container p,
+.solution-container h1 {
   color: black;
   font-weight: bold;
 }
-.solution-info p{
+.solution-info p {
   width: 400px;
 }
 /* End of Solution Style */
 
 /* Footer Style */
-.footer{
+.footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
   background-color: #eaeaea;
-  padding:3rem;
+  padding: 3rem;
 }
-.footer-flex{
+.footer-flex {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.footer a{
+.footer a {
   color: #333;
   font-weight: bold;
   margin-top: 10px;
 }
-.icon{
+.icon {
   color: #333;
 }
 /* End of Footer Style */
 
 /*Resposive Design*/
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .header {
     margin: 10px 0.5rem;
   }
@@ -145,26 +154,27 @@ li {
   .solution-info {
     flex-direction: column;
   }
-  .info{
+  .info {
     margin-top: 10px;
   }
-  .solution-info p{
+  .solution-info p {
     width: 300px;
+  }
+  .header ul li {
+    padding-left: 1rem;
+    transform: translateY(3px);
   }
 }
 @media (max-width: 400px) {
   .header {
     margin: 10px 0.5rem;
   }
-  .footer{
-    padding:2rem;
+  .footer {
+    padding: 2rem;
   }
   .header h1 {
     font-size: 16px;
   }
-  .header ul li{
-    padding-left: 1rem;
-    transform: translateY(1px);
-
-  }
+ 
+ 
 }

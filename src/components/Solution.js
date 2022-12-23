@@ -3,7 +3,7 @@ import React from "react";
 
 const Solution = () => {
   return (
-    <div id="solutionyy" className="solution-container">
+    <div id="solution" className="solution-container">
       <div className="solution-info">
         <Image
           src="/sol.jpg"
