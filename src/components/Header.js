@@ -5,10 +5,10 @@ const Header = () => {
     <div className="header">
       <h1>SOLAR ENERGY</h1>
       <ul>
-        <a href="#solution">
+        <a href="#solution" style={{ color: "#fff" }}>
           <li>SOLUTION</li>
         </a>
-        <a href="#contact">
+        <a href="#contact" style={{ color: "#fff" }}>
           <li>CONTACT</li>
         </a>
       </ul>
