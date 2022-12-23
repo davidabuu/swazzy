@@ -10,7 +10,7 @@ html {
   scroll-behavior: smooth;
 }
 h1 {
-  margin: 0;
+  margin: 0 !important;
   
 }
 body{
