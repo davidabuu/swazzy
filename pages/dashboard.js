@@ -12,7 +12,7 @@ const Dashboard = () => {
           <div className="dash-name">
             <h1>Hello, ABU</h1>
             <Link href="/login">
-              <Person style={{ cursor: "pointer" }} />
+              <Person style={{ cursor: "pointer", color: "#333" }} />
             </Link>
           </div>
         </div>
