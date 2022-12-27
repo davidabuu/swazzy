@@ -1,9 +1,10 @@
 import React from "react";
 import { Button, Input } from "antd";
 import UserWebLayout from "../src/components/UserWebLayout";
+import Link from 'next/link'
 const Login = () => {
   return (
-    <UserWebLayout webtitle='LOGIN'>
+    <UserWebLayout webtitle="LOGIN">
       <div className="login">
         <div className="form">
           <form>
@@ -25,9 +26,11 @@ const Login = () => {
 
             <br></br>
             <div>
-              <Button className="login-btn" htmlType="submit">
-                LOGIN
-              </Button>
+              <Link href='/dashboard'>
+                <Button className="login-btn" htmlType="submit">
+                  LOGIN
+                </Button>
+              </Link>
             </div>
           </form>
         </div>

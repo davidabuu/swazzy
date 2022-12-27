@@ -151,7 +151,7 @@ form {
   margin: 50px 0rem;
   min-height: 50vh;
 }
-form h2{
+form h2 {
   font-weight: bolder;
 }
 input {
@@ -164,6 +164,29 @@ input {
   color: #fff !important;
 }
 /* End of Login Style */
+/* Dashboard Style */
+.dashboard-container {
+  background-color: #f4f4f4;
+  padding: 0 2rem;
+}
+.dash-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #333;
+}
+.dash-name{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.dash-name h1{
+  padding-right:1rem ;
+}
+.table{
+  margin-top: 10px;
+}
+/* End of Dashboard Style */
 /* Footer Style */
 .footer {
   display: flex;
@@ -217,6 +240,9 @@ input {
     padding-left: 1rem;
     transform: translateY(3px);
   }
+  .dashboard-container{
+    padding: 0.5rem;
+  }
 }
 @media (max-width: 400px) {
   .header {
@@ -228,7 +254,14 @@ input {
   .header h1 {
     font-size: 16px;
   }
+  .header ul li {
+    transform: translateY(5px);
+  }
+ 
   form {
     padding: 10px;
+  }
+  .dash-header h1{
+    font-size: 17px;
   }
 }
