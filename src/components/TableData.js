@@ -134,8 +134,7 @@ const TableData = () => {
         multiple: 3,
       },
       sortDirections: ["descend", "ascend"],
-      showOnResponse: true,
-      showOnDesktop: true,
+
       render: (text) => <div style={{ fontWeight: "bolder" }}>{text}</div>,
     },
     {
@@ -148,11 +147,8 @@ const TableData = () => {
         compare: (a, b) => a.voltage.length - b.voltage.length,
         multiple: 3,
       },
-      responsive: ["sm"],
       sortDirections: ["descend", "ascend"],
 
-      showOnResponse: true,
-      showOnDesktop: true,
       render: (text) => (
         <div style={{ color: "red", fontWeight: "bolder" }}>{text}</div>
       ),
@@ -168,8 +164,7 @@ const TableData = () => {
       },
 
       sortDirections: ["descend", "ascend"],
-      showOnResponse: true,
-      showOnDesktop: true,
+
       render: (text) => (
         <div style={{ color: "blue", fontWeight: "bolder" }}>{text}</div>
       ),
@@ -182,8 +177,7 @@ const TableData = () => {
         compare: (a, b) => a.raid.length - b.raid.length,
         multiple: 3,
       },
-      showOnResponse: true,
-      showOnDesktop: true,
+
       render: (text) => (
         <div style={{ color: "orange", fontWeight: "bolder" }}>{text}</div>
       ),
@@ -196,7 +190,6 @@ const TableData = () => {
         compare: (a, b) => a.status.length - b.status.length,
         multiple: 3,
       },
-      responsive: ["sm"],
       showOnResponse: true,
       sortDirections: ["descend", "ascend"],
       showOnDesktop: true,
@@ -209,7 +202,13 @@ const TableData = () => {
   ];
   return (
     <div className="table">
-      <Table dataSource={dataSource} columns={columns} />
+     <Table
+    columns={columns}
+    dataSource={dataSource}
+    scroll={{
+      x: 100,
+    }}
+  />
     </div>
   );
 };
