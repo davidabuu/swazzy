@@ -2,10 +2,15 @@ import React from "react";
 import { Table } from "antd";
 import { CheckOutlined } from "@ant-design/icons";
 const TableData = () => {
+const date = new Date();
+let day = date.getDate();
+let month = date.getMonth() + 1;
+let year = date.getFullYear();
+let currentDate = `${day}-${month}-${year}`;
   const dataSource = [
     {
       key: "1",
-      date: "7/2/2021, 2:05:07 PM",
+      date: currentDate,
       voltage: "49V",
       current: "55Amp",
       raid: "10Rad",
@@ -14,7 +19,7 @@ const TableData = () => {
     },
     {
       key: "2",
-      date: "7/2/2021, 2:05:07 PM",
+      date: currentDate,
       voltage: "49V",
       current: "55Amp",
       raid: "10Rad",
@@ -24,7 +29,7 @@ const TableData = () => {
     {
       key: "3",
 
-      date: "7/2/2021, 2:05:07 PM",
+      date: currentDate,
       voltage: "49V",
       current: "55Amp",
       raid: "10Rad",
@@ -34,7 +39,7 @@ const TableData = () => {
     {
       key: "4",
 
-      date: "7/2/2021, 2:05:07 PM",
+      date: currentDate,
       voltage: "49V",
       current: "55Amp",
       raid: "10Rad",
@@ -44,7 +49,7 @@ const TableData = () => {
     {
       key: "12",
 
-      date: "7/2/2021, 2:05:07 PM",
+      date: currentDate,
       voltage: "49V",
       current: "55Amp",
       raid: "10Rad",
@@ -54,7 +59,7 @@ const TableData = () => {
     {
       key: "5",
 
-      date: "7/2/2021, 2:05:07 PM",
+      date: currentDate,
       voltage: "49V",
       current: "55Amp",
       raid: "10Rad",
@@ -64,7 +69,7 @@ const TableData = () => {
     {
       key: "6",
 
-      date: "7/2/2021, 2:05:07 PM",
+      date: currentDate,
       voltage: "49V",
       current: "55Amp",
       raid: "10Rad",
@@ -74,7 +79,7 @@ const TableData = () => {
     {
       key: "7",
 
-      date: "7/2/2021, 2:05:07 PM",
+      date: currentDate,
       voltage: "49V",
       current: "55Amp",
       raid: "10Rad",
@@ -84,7 +89,7 @@ const TableData = () => {
     {
       key: "8",
 
-      date: "7/2/2021, 2:05:07 PM",
+      date: currentDate,
       voltage: "49V",
       current: "55Amp",
       raid: "10Rad",
@@ -94,7 +99,7 @@ const TableData = () => {
     {
       key: "9",
 
-      date: "7/2/2021, 2:05:07 PM",
+      date: currentDate,
       voltage: "49V",
       current: "55Amp",
       raid: "10Rad",
@@ -104,7 +109,7 @@ const TableData = () => {
     {
       key: "10",
 
-      date: "7/2/2021, 2:05:07 PM",
+      date: currentDate,
       voltage: "49V",
       current: "55Amp",
       raid: "10Rad",
@@ -114,7 +119,7 @@ const TableData = () => {
     {
       key: "11",
 
-      date: "7/2/2021, 2:05:07 PM",
+      date: currentDate,
       voltage: "49V",
       current: "55Amp",
       raid: "10Rad",

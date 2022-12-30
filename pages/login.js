@@ -20,7 +20,7 @@ const Login = () => {
               <div>
                 <label>Password</label>
                 <br></br>
-                <Input type="password" required />
+                <Input type="password" placeholder='Enter Password' required />
               </div>
             </div>
 
